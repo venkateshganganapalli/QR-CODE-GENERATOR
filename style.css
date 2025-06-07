@@ -1,0 +1,66 @@
+/* margin means space between one div to another div  */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center; 
+    height:100vh;
+    background-color: green;
+}
+.container{
+    height:260px;
+    width:400px;
+    background-color: white;
+    border-radius:5px;
+    padding:20px ;
+    box-shadow:0 10px 30px black;
+    transition:height 0.2s ease;
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+}
+.form{
+     margin:20px 25px;                 
+}
+#text,#generate{
+    width:100%;
+    height:50px;
+    border:none;
+    outline:none;
+    border-radius: 5px;
+}
+#text{
+    font-size:16px;
+    padding:1px 17px;
+    border:1px solid grey;
+}
+#generate{
+    color:white;
+    cursor:pointer;
+    margin-top:20px;
+    font-size:16px;
+    background-color: blueviolet;
+}
+.qr-code{
+    opacity:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:1 px solid black;
+    border-radius: 5px;
+}
+#qr-img{
+    width:17;
+}
+.container.active{
+    height:530px;
+}
+.container.active .qr-code{
+    opacity:1;
+}
